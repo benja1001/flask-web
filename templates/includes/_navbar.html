@@ -1,0 +1,78 @@
+<!-- <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">MyFlaskApp</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/articles">Articles</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          {% if session.logged_in %}
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/logout">Logout</a></li>
+          {% else %}
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+          {% endif %}
+
+        </ul>
+      </div>/.nav-collapse 
+
+    </div>
+  </nav> -->
+    <head>
+        <title>Future Imperfect</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="static/assets/css/main.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <style>
+            div.fixed {
+                position: fixed;
+                /* bottom: 0; */
+                top: 10;
+                right: 0;
+                width: 300px;
+                /* border: 3px solid #73AD21; */
+            }
+            </style>
+    </head>
+    <body class="is-preload">  
+
+        <header id="header">
+            <a class = "t" href="">FUTURE IMPERFECT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class = "t" href="login.html">LOGOUT</a>
+            <nav class="links">
+                
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="search">
+                        <a class="fa-search" href="#search">Search</a>
+                        <form id="search" method="get" action="#">
+                            <input type="text" name="query" placeholder="Search" />
+                        </form>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                    <li class="menu">
+                        <a href="/logout">Logout</a>
+                    </li>
+                <!-- </ul>
+                <li class="nav navbar-nav navbar-right">
+                        <li><a href="/logout">Logout</a></li>
+                </ul> -->
+            </nav>
+        </header>
+</body>
